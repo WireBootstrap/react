@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>WireBootstrap for React</title>
+    
+    <!-- Theme Css -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./theme/css/style.css">
+
+    
+  <!-- Theme Js -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script src="./theme/js/popper.js"></script>
+  <script src="./theme/js/bootstrap.min.js"></script>
+  <script src="./theme/js/main.js"></script>
+
+  <!-- WireBoots -->
+  <script type="text/javascript" src="/lib/wire.js"></script>
+  <script type="text/javascript" src="/lib/wire-bootstrap.js"></script>
+
+  
+  </head>
+  <body>
+
+    <div class="wrapper d-flex align-items-stretch">
+      <nav id="sidebar">
+          <div class="p-4 pt-5">
+              <a href="#" class="img logo rounded-circle mb-5" style="background-image: url(./logo192.png);"></a>
+              <ul class="list-unstyled components mb-5">
+                  <li>
+                      <a href="#menu-filter" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">WireBootstrap for React</a>
+                      <ul class="collapsed list-unstyled" id=menu-filter>
+                          <li class="active">
+                              <a href="./index.html">React Components</a>
+                          </li>
+                      </ul>                        
+                  </li>
+              </ul>               
+          </div>
+      </nav>
+
+      <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5">
+
+          <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+
+                  <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                      <i class="fa fa-bars"></i>
+                      <span class="sr-only">Toggle Menu</span>
+                  </button>
+                  <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <i class="fa fa-bars"></i>
+                  </button>
+
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                      <ul class="nav navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="./index.html">Home</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" target="wire-docs" href="https://www.wirebootstrap.com">WireBootstrap</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" target="wire-docs" href="https://docs.wirebootstrap.com/react">Docs</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" target="wire-docs" href="https://reactjs.org">React</a>
+                          </li>                            
+                      </ul>
+                  </div>
+              </div>
+          </nav>
+
+          <h2 class="mb-4">WireBootstrap React Component</h2>
+
+          <div class="alert alert-success">
+            The <a href="https://docs.wirebootstrap.com/react" target="_new">WireBootstrap React Component</a> turns any WireBootstrap component into a React component that can be use within React applications.</strong>
+            <br>
+            The following turns basic HTML TABLE and SELECT elements into <a href="https://demo.wirebootstrap.com/smart-admin/wirebootstrap/app/pages/tables-bootstrap.html" target="_new">Bootstrap Table</a> 
+            and <a href="https://demo.wirebootstrap.com/smart-admin/wirebootstrap/app/pages/filters-select.html" target="_new">Bootstrap Select</a> components            
+            inside a React application using the <strong>WireBootstrap React Component</strong>.
+         </div>  
+
+     
+          <div class="row">
+
+            <div class="col-md-6">
+                <div class="card bg-light mb-3">
+                    <div class="card-body">
+                        <div id="filters"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+          
+                <div class="alert alert-secondary">
+                    <var>
+                        return &lt;WireComponent component="wire.bsSelect" config={config}&gt;<br>
+                            &nbsp;&nbsp;&lt;select className="form-control"&gt;&lt;/select&gt;<br>
+                        &lt;/WireComponent&gt;;
+                    </var>                   
+                </div>  
+        
+            </div>
+
+         
+        </div>      
+         
+        <hr/>
+         
+          <div class="row">
+
+              <div class="col-md-6">
+                  <div class="card border-secondary mb-3">
+                      <div class="card-header">Bootstrap Table</div>
+                      <div class="card-body text-secondary">
+                          <div id="table1"></div>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-md-6">
+          
+                <div class="alert alert-secondary">
+                    <var>
+                        return &lt;WireComponent component="wire.bsTable" config={config}&gt;<br>
+                            &nbsp;&nbsp;&lt;table className="table table-hover table-striped"&gt;&lt;/table&gt;<br>
+                        &lt;/WireComponent&gt;;
+                    </var>                                       
+                </div>  
+        
+            </div>
+          </div>
+
+          <hr>
+
+          <h2 class="mb-4">Composing Components</h2>
+
+          <div class="alert alert-success">
+            If the same component is to be used multiple times in an application, much of the configuration for the component can be internalized into a seperate component. 
+            <br>
+            In the example below, a new component called <strong>MyTable</strong> encapsulates the component code used to render the TABLE above.
+            It can be used instead of configuring the  <strong>WireBootstrap React Component</strong> directly each time.
+         </div>  
+
+         <div class="row">
+
+            <div class="col-md-6">
+                <div class="card border-secondary mb-3">
+                    <div class="card-header">Bootstrap Table</div>
+                    <div class="card-body text-secondary">
+                        <div id="table2"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+        
+              <div class="alert alert-secondary">                  
+                  <var>
+                      return &lt;MyTable config={config}&gt;&lt;/MyTable&gt;;
+                  </var>                                       
+              </div>                 
+
+          </div>
+        </div>
+
+
+          <footer class="mt-4">
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+              This page uses the <a href="https://colorlib.com/wp/template/bootstrap-sidebar-01" target="_blank">Bootstrap Sidebar Template</a>
+              created by <a href="https://colorlib.com" target="_blank">Colorlib.com</a>
+              <br>
+              Copyright &copy;
+              <script>document.write(new Date().getFullYear());</script> All rights reserved
+              <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+          </footer>
+
+      </div>
+  </div>
+
+  </body>
+</html>
