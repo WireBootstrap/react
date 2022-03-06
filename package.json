@@ -9,7 +9,6 @@
     "@types/node": "^16.11.26",
     "@types/react": "^17.0.39",
     "@types/react-dom": "^17.0.11",
-    "@wirebootstrap/wire": "^2.1.15",
     "@wirebootstrap/wire-bootstrap": "^2.1.5",
     "copyfiles": "^2.4.1",
     "grunt": "^1.4.1",
