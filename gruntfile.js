@@ -15,7 +15,7 @@ module.exports = function(grunt) {
         },        
         readme: {
           src: './README.component.md',
-          dest: './dist/README.component.md'
+          dest: './dist/README.md'
         },
       }
       

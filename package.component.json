@@ -2,7 +2,7 @@
   "name": "@wirebootstrap/wire-react",
   "description": "WireBootstrap React Component",
   "license": "https://www.wirebootstrap.com/license/themes-license.html",
-  "version": "1.1.5",
+  "version": "1.1.6",
   "dependencies": {
     "@wirebootstrap/wire": "^2.1.15",
     "react": "^17.0.2"
