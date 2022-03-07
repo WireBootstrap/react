@@ -1,6 +1,6 @@
 {
   "name": "@wirebootstrap/wire-react",
-  "description": "WireBootstrap for React",
+  "description": "WireBootstrap React Component",
   "license": "https://www.wirebootstrap.com/license/themes-license.html",
   "version": "1.1.4",
   "dependencies": {

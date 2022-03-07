@@ -7,7 +7,7 @@ React is a component based JavaScript library for building user interfaces.
 Visit https://docs.wirebootstrap.com/react/react-component for getting started materials and detailed documentation.
 
 # Support
-Visit the Angular product page on the WireBootstrap web site at https://www.wirebootstrap.com/products/react.html for technical support options.
+Visit the React product page on the WireBootstrap web site at https://www.wirebootstrap.com/products/react.html for technical support options.
 
 # WireBootstrap
 Build applications with Bootstrap themes and components using **WireBootstrap** for free.  Visit https://www.wirebootstrap.com for details.
