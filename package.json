@@ -2,7 +2,7 @@
   "name": "wire-react-sample",
   "description": "WireBootstrap for React Sample Application",
   "license": "https://www.wirebootstrap.com/license/themes-license.html",
-  "version": "1.1.4",
+  "version": "1.1.5",
   "private": true,
   "dependencies": {
     "@types/jest": "^27.4.1",
