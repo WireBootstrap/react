@@ -1,5 +1,6 @@
 # License Agreement
 WireBootstrap for React
+
 Last updated: November 2021
 
 Copyright (c) 2021-2022 Enterprise Blocks, Inc.
